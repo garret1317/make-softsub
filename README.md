@@ -11,4 +11,4 @@ quick'n dirty script to OCR hardsubs into softsubs.
 
 `./make-softsub.sh input.mkv output.ass`
 
-New directories will be created in your current working directory.
+New directories will be created in your current working directory by VideoSubFinder.
