@@ -23,7 +23,7 @@ echo_stderr ()
 }
 
 echo_stderr "making images to OCR"
-VideoSubFinderWXW --use_cuda --clear_dirs --run_search --create_cleared_text_images --top_video_image_percent_end=0.2 -i "$1" -o .
+VideoSubFinderWXW --clear_dirs --run_search --create_cleared_text_images --top_video_image_percent_end=0.2 -i "$1" -o .
 
 echo_stderr "Images done"
 echo_stderr "Starting OCR"
