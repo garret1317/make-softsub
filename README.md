@@ -14,3 +14,5 @@ Outputs to SRT and ASS.
 ASS is reccomended due to more accurate timing.
 
 New directories will be created in your current working directory by VideoSubFinder.
+
+Border for VideoSubFinder to detect in is hardcoded because I can't be asked to add a flag for it.
