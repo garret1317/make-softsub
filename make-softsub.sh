@@ -3,7 +3,7 @@
 ### makes softsubs from hardsubs with VideoSubFinder and tesseract.
 ###
 ### Usage:
-###   my-script <input> <output>
+###   make-softsubs <input> <output>
 ###
 ### Options:
 ###   <input>   Video with hardsubs to OCR.
@@ -36,5 +36,5 @@ done
 
 
 echo_stderr "making subs"
-VideoSubFinderWXW --create_sub_from_txt_results="$2"
+VideoSubFinderWXW -o . --create_sub_from_txt_results="$2"
 echo_stderr "done!"
