@@ -16,7 +16,7 @@ ASS is reccomended due to more accurate timing.
 
 New directories will be created in your current working directory by VideoSubFinder.
 
-Outputting to .ass leaves trailing \Ns for me. You'll probably want to remove them. The thing you want to get rid of is `\\N\r`.
+Outputting to .ass leaves trailing \Ns for me. The thing you want to get rid of is `\\N\r`.
 
 I find-and-replaced it in a text editor, but you could also do `cat input.ass | tr -d '\\N\r' > output.ass` for a CLI method.`
 
