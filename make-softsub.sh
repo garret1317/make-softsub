@@ -17,16 +17,12 @@ if [[ $# == 0 ]] || [[ "$1" == "-h" ]]; then
     help
     exit 1
 fi
-echo_stderr ()
-{
-    echo "$@" >&2
-}
 
-echo_stderr "making images to OCR"
+echo "making images to OCR"
 VideoSubFinderWXW --clear_dirs --run_search --create_cleared_text_images --top_video_image_percent_end=0.2 -i "$1" -o .
 
-echo_stderr "Images done"
-echo_stderr "Starting OCR"
+echo "Images done"
+echo "Starting OCR"
 
 for img in TXTImages/*
 do
@@ -35,6 +31,6 @@ tesseract -l eng "$img" "TXTResults/$imgout"
 done
 
 
-echo_stderr "making subs"
+echo "making subs"
 VideoSubFinderWXW -o . --create_sub_from_txt_results="$2"
-echo_stderr "done!"
+echo "done!"
