@@ -10,8 +10,6 @@ quick'n dirty script to OCR hardsubs into softsubs.
 
 `./make-softsub.sh input.mkv output.ass`
 
-**don't use powershell or cmd, it won't work properly**
-
 Outputs to SRT and ASS.
 ASS is reccomended due to more accurate timing.
 
