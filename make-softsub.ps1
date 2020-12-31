@@ -16,3 +16,4 @@ tesseract -l eng "TXTImages/$ye" "TXTResults/$ye"
 
 Write-Host "making subs"
 VideoSubFinderWXW -o . --create_sub_from_txt_results="$subs" | Out-Null
+Write-Host "done!"
